@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Page loader async",
   "main": "index.js",
+  "bin": {
+    "pageloader": "bin/page-loader.js"
+  },
   "simple-git-hooks": {
     "pre-push": "npx lint-staged"
   },
