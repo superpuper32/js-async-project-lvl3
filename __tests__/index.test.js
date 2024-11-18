@@ -17,7 +17,6 @@ const getFixturePath = (filename) => path.resolve(__dirname, '../__fixtures__/',
 const srcFilename = 'index.html';
 const destFilename = 'ru-hexlet-io-courses.html';
 
-const dest = path.join(os.tmpdir(), 'home', 'user', 'current-dir');
 const src = getFixturePath(srcFilename);
 
 let data;
