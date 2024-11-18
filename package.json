@@ -1,0 +1,54 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Page loader async",
+  "main": "index.js",
+  "bin": {
+    "pageloader": "bin/page-loader.js"
+  },
+  "simple-git-hooks": {
+    "pre-push": "npx lint-staged"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superpuper32/js-async-project-lvl3.git"
+  },
+  "keywords": [
+    "promises"
+  ],
+  "author": "Mikhail Pochitalin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superpuper32/js-async-project-lvl3/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/superpuper32/js-async-project-lvl3#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "debug": "^4.3.5",
+    "lodash": "^4.17.21"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.7.0",
+    "@jest/globals": "^29.7.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.8.0",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "lint-staged": "^15.2.7",
+    "nock": "^13.5.6",
+    "simple-git-hooks": "^2.11.1"
+  }
+}
