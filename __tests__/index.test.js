@@ -1,5 +1,4 @@
 import { fileURLToPath } from 'url';
-import os from 'os';
 import path from 'path';
 import fsp from 'fs/promises';
 import nock from 'nock';
