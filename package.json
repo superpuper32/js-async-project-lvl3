@@ -30,6 +30,7 @@
   "type": "module",
   "homepage": "https://github.com/superpuper32/js-async-project-lvl3#readme",
   "dependencies": {
+    "axios": "^1.7.7",
     "debug": "^4.3.5",
     "lodash": "^4.17.21"
   },
@@ -47,6 +48,7 @@
     "jest": "^29.7.0",
     "jest-cli": "^29.7.0",
     "lint-staged": "^15.2.7",
+    "nock": "^13.5.6",
     "simple-git-hooks": "^2.11.1"
   }
 }

@@ -9,8 +9,8 @@ program
   .arguments('<url>')
   .description('Page loader utility')
   .action(
-    (url) => console.log(pageLoader(url)),
+    (url, options) => console.log(pageLoader(url, options.output)),
   )
-  .helpOption('-h, --help', 'display help for  command')
+  .helpOption('-h, --help', 'display help for command')
   .option('-o, --output [type]', 'output dir', '/home/user/current-dir')
   .parse(process.argv);
