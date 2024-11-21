@@ -3,16 +3,19 @@ import axios from 'axios';
 
 import { getName, getPath } from './utils.js';
 
-const pageLoader = async (url, filepath = '/home/user/current-dir') => {
-  const response = await axios.get(url);
-
-  const name = getName(url);
-
+const pageLoader = (url, filepath = '/home/user/current-dir') => {
   const dirPath = getPath(filepath, '');
+  const name = getName(url);
   const filePath = getPath(filepath, name);
 
-  await fsp.mkdir(dirPath, { recursive: true });
-  await fsp.writeFile(filePath, response.data);
+  return axios.get(url)
+    .then((res) => {
+      fsp.mkdir(dirPath, { recursive: true });
+      return res;
+    })
+    .then((res) => fsp.writeFile(filePath, res.data))
+    .catch(console.log)
+    .finally(() => console.log(`open ${dirPath}`));
 };
 
 export default pageLoader;
