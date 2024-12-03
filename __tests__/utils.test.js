@@ -1,9 +1,10 @@
 import path from 'path';
-import { getName, getPath } from '../src/utils.js';
+import { getFilenameFromUrl, getPath } from '../src/utils.js';
 
-test('getName cases', () => {
-  expect(getName('https://ru.hexlet.io/courses')).toBe('ru-hexlet-io-courses.html');
-  expect(getName('https://api.github.com/licenses/mit')).toBe('api-github-com-licenses-mit.html');
+test('getFilenameFromUrl cases', () => {
+  expect(getFilenameFromUrl('https://ru.hexlet.io/courses', '.html')).toBe('ru-hexlet-io-courses.html');
+  expect(getFilenameFromUrl('https://api.github.com/licenses/mit', '.html')).toBe('api-github-com-licenses-mit.html');
+  expect(getFilenameFromUrl('https://ru.hexlet.io/courses', '-files')).toBe('ru-hexlet-io-courses-files');
 });
 
 test('getPath cases', () => {

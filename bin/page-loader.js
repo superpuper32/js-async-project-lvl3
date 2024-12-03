@@ -12,5 +12,5 @@ program
     (url, options) => console.log(pageLoader(url, options.output)),
   )
   .helpOption('-h, --help', 'display help for command')
-  .option('-o, --output [type]', 'output dir', '/home/user/current-dir')
+  .option('-o, --output [dir]', 'output dir', '/home/user/current-dir')
   .parse(process.argv);
