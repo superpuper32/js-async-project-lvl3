@@ -31,6 +31,7 @@
   "homepage": "https://github.com/superpuper32/js-async-project-lvl3#readme",
   "dependencies": {
     "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
     "debug": "^4.3.5",
     "lodash": "^4.17.21"
   },
