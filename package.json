@@ -4,7 +4,7 @@
   "description": "Page loader async",
   "main": "index.js",
   "bin": {
-    "pageloader": "bin/page-loader.js"
+    "page-loader": "bin/page-loader.js"
   },
   "simple-git-hooks": {
     "pre-push": "npx lint-staged"
